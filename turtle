@@ -1,0 +1,10 @@
+import turtle
+
+colors = ["red", "yellow", "green", "blue"]
+
+t = turtle.Turtle()
+
+for iterator in range(200):
+  t.pencolor(colors[iterator % len(colors)])
+  t.forward(iterator)
+  t.left(88)
